@@ -86,4 +86,18 @@ public class Loja {
         this.entregadores = entregadores;
     }
     
+    public Loja selfReplicate(){
+        Loja replica = new Loja();
+        replica.setNome(this.getNome());
+        replica.setDescricao(this.getDescricao());
+        replica.setEmail(this.getEmail());
+        replica.setEndereço(this.getEndereço());
+        replica.setCnpj(this.getCnpj());
+        replica.setTelefone(this.getTelefone());
+        replica.setSenha(this.getSenha());
+        replica.setEntregadores(this.getEntregadores());
+        
+        return replica;
+    }
+    
 }

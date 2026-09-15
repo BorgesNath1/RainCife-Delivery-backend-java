@@ -46,4 +46,13 @@ public class MarcaAgua {
         this.descricao = descricao;
     }
     
+    public MarcaAgua selfReplicate(){
+        MarcaAgua replica = new MarcaAgua();
+        replica.setNome(this.getNome());
+        replica.setDescricao(this.getDescricao());
+        replica.setFonteOrigem(this.getFonteOrigem());
+        
+        return replica;
+    }
+    
 }

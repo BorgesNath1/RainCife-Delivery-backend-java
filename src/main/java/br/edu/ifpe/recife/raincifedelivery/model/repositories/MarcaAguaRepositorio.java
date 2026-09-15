@@ -35,7 +35,7 @@ public class MarcaAguaRepositorio {
     public static MarcaAgua  read(String nome) {
         for (MarcaAgua a: aguas){
             if(a.getNome().equals(nome)){
-                return a;
+                return a.selfReplicate();
             }
         }
         return null;
