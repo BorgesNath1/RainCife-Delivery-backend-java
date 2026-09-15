@@ -46,6 +46,17 @@ public class ItemEntrega {
     public void setAgua(MarcaAgua agua) {
         this.agua = agua;
     }
+
+    public ItemEntrega selfReplicate() {
+        ItemEntrega replica = new ItemEntrega();
+        
+        replica.setAgua(this.getAgua());
+        replica.setPrecoVenda(this.getPrecoVenda());
+        replica.setQuantidade(this.getQuantidade());
+        replica.setId(this.getId());
+        
+        return replica;
+    }
     
     
 }

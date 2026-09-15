@@ -45,6 +45,17 @@ public class Entregador {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    public Entregador selfReplicate() {
+        Entregador replica = new Entregador();
+        
+        replica.setEmail(this.getEmail());
+        replica.setNome(this.getNome());
+        replica.setSenha(this.getSenha());
+        replica.setTelefone(this.getTelefone());
+        
+        return replica;
+    }
     
     
 }

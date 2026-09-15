@@ -102,5 +102,22 @@ public class Entrega {
         }
         return valor;
     }
+
+    public Entrega selfReplicate() {
+        Entrega replica = new Entrega();
+        
+        replica.setId(this.getId());
+        replica.setCliente(this.getCliente());
+        replica.setDataHora(this.getDataHora());
+        replica.setObservacao(this.getObservacao());
+        replica.setStatus(this.getStatus());
+        
+        replica.setLoja(this.getLoja());
+        replica.setCliente(this.getCliente());
+        replica.setEntregador(this.getEntregador());
+        replica.setItemEntrega(this.getItemEntrega());
+        
+        return replica;
+    }
     
 }

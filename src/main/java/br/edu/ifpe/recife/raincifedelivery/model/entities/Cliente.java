@@ -64,6 +64,17 @@ public class Cliente {
     public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
+
+    public Cliente selfReplicate() {
+        Cliente replica = new Cliente();
+        replica.setEmail(this.getEmail());
+        replica.setNome(this.getNome());
+        replica.setEndereco(this.getEndereco());
+        replica.setSenha(this.getSenha());
+        replica.setTelefone(this.getTelefone());
+        
+        return replica;
+    }
     
     
 }
