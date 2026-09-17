@@ -4,9 +4,17 @@
         <servlet-name>SegundoServlet</servlet-name>
         <servlet-class>br.edu.ifpe.recife.raincifedelivery.newpackage.controllers.SegundoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>MarcaAguasController</servlet-name>
+        <servlet-class>br.edu.ifpe.recife.raincifedelivery.newpackage.controllers.MarcaAguasController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SegundoServlet</servlet-name>
         <url-pattern>/SegundoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MarcaAguasController</servlet-name>
+        <url-pattern>/MarcaAguasController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
