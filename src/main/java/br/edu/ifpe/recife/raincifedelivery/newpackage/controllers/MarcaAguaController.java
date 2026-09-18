@@ -87,6 +87,7 @@ public class MarcaAguaController extends HttpServlet {
         mAgua.setDescricao(Descrição);
         
         MarcaAguaRepositorio.create(mAgua);
+        response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -94,7 +95,9 @@ public class MarcaAguaController extends HttpServlet {
             out.println("<title>Servlet MarcaAguaController</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Produto cadastrado com Sucesso</h1>");
+            out.println("<h1>Produto cadastrado com Sucesso</h1></br>");
+            out.println("<a href='cadastroMarcaAgua.html'> Voltar </a></br>");
+            out.println("<a href='MarcaAguas'> Ver marcas cadastradas </a></br>");
             out.println("</body>");
             out.println("</html>");
         }
