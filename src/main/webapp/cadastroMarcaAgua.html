@@ -8,17 +8,20 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSSs/style.css">
     </head>
     <body>
-        <div>
+        <div class="container">
             <h1>Cadastro de Nova Marca D´água</h1>
-            <form action="MarcaAguaController" method="post">
-                Nome:<input type="text" name="nome"/></br>
-                Fonte de Origem: <input type="text" name="fonte"/></br>
-                Preço: <input type="text" name="preço"/></br>
-                Descrição: <textarea name="description"></textarea></br>
-                <button type="submit"> Cadastrar </button>
-            </form>
+            <section>
+                <form action="MarcaAguaController" method="post">
+                    Nome:<input type="text" name="nome"/></br>
+                    Fonte de Origem: <input type="text" name="fonte"/></br>
+                    Preço: <input type="text" name="preço"/></br>
+                    Descrição: <textarea name="description"></textarea></br>
+                    <button type="submit"> Cadastrar </button>
+                </form>
+            </section>
         </div>
     </body>
 </html>
