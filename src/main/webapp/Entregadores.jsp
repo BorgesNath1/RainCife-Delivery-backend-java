@@ -7,6 +7,7 @@
 <%@page import="br.edu.ifpe.recife.raincifedelivery.model.entities.Entregador"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="ifpe" uri="/WEB-INF/tlds/customTags.tld" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,9 +18,10 @@
     </head>
     <body>
         <h1>Página dos Entregadores</h1>
-        <%
-            List<Entregador> entregadores = (List<Entregador>)session.getAttribute("entregadores");
-            %>
+        <ifpe:CarregaEntregadores>
+            
+            
+            
             
             <button class="btn btn-success" data-bs-toogle="modal" data-bs-modal="">Cadastrar novo</button>
                     <table class="table">   
