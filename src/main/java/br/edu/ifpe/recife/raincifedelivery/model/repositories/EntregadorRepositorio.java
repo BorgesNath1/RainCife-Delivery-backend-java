@@ -41,4 +41,12 @@ public class EntregadorRepositorio {
         }
         return null;
     }
+    
+    public static void delete (Entregador deliverer){
+        entregadores.remove(deliverer);
+    }
+    
+    public static List<Entregador> readAll(){
+        return entregadores;
+    }
 }

@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18 de set. de 2026, 10:27:27
+    Author     : ALUNOS 2
+*/
+
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 100vh;
+    align-items: center;
+    background-color: lightcyan; 
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 1px black;
+    font-family: sans-serif ;
+}
+
+input, textArea{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;        
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color:  background ;
+}
